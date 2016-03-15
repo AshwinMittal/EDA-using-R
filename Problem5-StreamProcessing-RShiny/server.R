@@ -10,7 +10,7 @@ library(streamR)
 rbind
 
 shinyServer(function(input, output) {
-  tweets.df <- parseTweets("ashwinmi_tweets.json", verbose = FALSE)
+  tweets.df <- parseTweets("tweets.json", verbose = FALSE)
   
   
   total_count <- nrow(tweets.df)
